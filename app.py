@@ -48,15 +48,15 @@ if __name__ == "__main__":
     print("\nA) {} \nB) {} \nC) {}".format(team1, team2, team3))
     second_option = input("\nEnter an option: ").upper()
     if second_option == 'A':
-      print("\n Team: Panthers Stats \n-------------------- \nTotal players: {}".format(len(team1_players)))
+      print("\n Team: {} Stats \n-------------------- \nTotal players: {}".format(team1, len(team1_players)))
       print("Players on team:")
       print(' ' + ', '.join(player["name"] for player in team1_players))
     elif second_option == 'B':
-      print("\n Team: Bandits Stats \n-------------------- \nTotal players: {}".format(len(team2_players)))
+      print("\n Team: {} Stats \n-------------------- \nTotal players: {}".format(team2, len(team2_players)))
       print("Players on team:")
       print(' ' + ', '.join(player["name"] for player in team2_players))
     else:
-      print("\n Team: Warriors Stats \n-------------------- \nTotal players: {}".format(len(team3_players)))
+      print("\n Team: {} Stats \n-------------------- \nTotal players: {}".format(team3, len(team3_players)))
       print("Players on team:")
       print(' ' + ', '.join(player["name"] for player in team3_players))
     
